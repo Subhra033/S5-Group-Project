@@ -89,9 +89,5 @@ public class Page3_E extends JFrame {
 		lblNewLabel.setIcon(new ImageIcon(Page3_E.class.getResource("/image/receptionist-icon.png")));
 		lblNewLabel.setBounds(460, 73, 244, 282);
 		contentPane.add(lblNewLabel);
-		
-		JTree tree = new JTree();
-		tree.setBounds(364, 73, 78, 72);
-		contentPane.add(tree);
 	}
 }
