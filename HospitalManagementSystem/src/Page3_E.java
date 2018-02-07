@@ -13,6 +13,8 @@ import java.awt.SystemColor;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import javax.swing.JTree;
 
 public class Page3_E extends JFrame {
 
@@ -82,5 +84,14 @@ public class Page3_E extends JFrame {
 		});
 		btnDoctorDetails.setBounds(0, 343, 358, 46);
 		panel.add(btnDoctorDetails);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon(Page3_E.class.getResource("/image/receptionist-icon.png")));
+		lblNewLabel.setBounds(460, 73, 244, 282);
+		contentPane.add(lblNewLabel);
+		
+		JTree tree = new JTree();
+		tree.setBounds(364, 73, 78, 72);
+		contentPane.add(tree);
 	}
 }
