@@ -1,9 +1,7 @@
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import java.awt.Panel;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
@@ -14,15 +12,15 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
-import javax.swing.JTree;
 import java.awt.Toolkit;
-import java.awt.Window.Type;
-import java.awt.TextField;
 import javax.swing.border.BevelBorder;
-import javax.swing.JEditorPane;
 
 public class Page3_E extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
 	/**
@@ -47,19 +45,18 @@ public class Page3_E extends JFrame {
 	public Page3_E() {
 		setForeground(new Color(255, 255, 255));
 		setFont(new Font("Adobe Caslon Pro", Font.PLAIN, 12));
-		setType(Type.POPUP);
 		setTitle("Newlife hospital");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Page3_E.class.getResource("/image/hospital-icon.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 732, 460);
+		setBounds(100, 100, 737, 458);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(51, 102, 153));
+		contentPane.setBackground(Color.WHITE);
 		contentPane.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(102, 0, 0), new Color(255, 255, 255), new Color(51, 51, 51), new Color(255, 255, 255)));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		Panel panel = new Panel();
-		panel.setBackground(new Color(0, 51, 102));
+		panel.setBackground(new Color(220, 20, 60));
 		panel.setBounds(0, 0, 358, 421);
 		contentPane.add(panel);
 		panel.setLayout(null);
@@ -119,14 +116,14 @@ public class Page3_E extends JFrame {
 		contentPane.add(btnBack);
 		
 		Panel panel_1 = new Panel();
-		panel_1.setBackground(new Color(0, 51, 102));
+		panel_1.setBackground(new Color(220, 20, 60));
 		panel_1.setBounds(358, 0, 358, 53);
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 		
 		JLabel lblNewlifeHospital = new JLabel("Newlife Hospital");
 		lblNewlifeHospital.setFont(new Font("Segoe UI Black", Font.BOLD, 25));
-		lblNewlifeHospital.setForeground(new Color(51, 153, 51));
+		lblNewlifeHospital.setForeground(SystemColor.text);
 		lblNewlifeHospital.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewlifeHospital.setBounds(60, 2, 284, 43);
 		panel_1.add(lblNewlifeHospital);
